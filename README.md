@@ -40,3 +40,5 @@ https://youtu.be/Yw7yWHigGKI <br />
 
 ==== snipet =====
 rafce
+
+- https://react-svgr.com/playground/
