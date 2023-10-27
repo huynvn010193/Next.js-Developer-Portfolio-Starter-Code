@@ -49,7 +49,7 @@ const NavBar = () => {
         <motion.a
           href='https://twitter.com'
           target={"_blank"}
-          className='w-6 mr-3'
+          className='w-6 mx-3'
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -58,7 +58,7 @@ const NavBar = () => {
         <motion.a
           href='https://twitter.com'
           target={"_blank"}
-          className='w-6 mr-3'
+          className='w-6 mx-3'
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -67,7 +67,7 @@ const NavBar = () => {
         <motion.a
           href='https://twitter.com'
           target={"_blank"}
-          className='w-6 mr-3'
+          className='w-6 mx-3'
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -76,7 +76,7 @@ const NavBar = () => {
         <motion.a
           href='https://twitter.com'
           target={"_blank"}
-          className='w-6 mr-3'
+          className='w-6 ml-3'
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
