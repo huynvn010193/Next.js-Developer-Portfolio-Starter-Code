@@ -48,3 +48,5 @@ https://www.canva.com/
 Remove BG: https://www.erase.bg/upload
 
 Convert svg: https://www.adobe.com/express/feature/image/convert/svg
+
+Use the fill-{color} utilities to change the fill color of an SVG.
