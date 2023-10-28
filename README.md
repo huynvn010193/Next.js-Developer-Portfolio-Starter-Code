@@ -42,3 +42,9 @@ https://youtu.be/Yw7yWHigGKI <br />
 rafce
 
 - https://react-svgr.com/playground/
+
+https://www.canva.com/
+
+Remove BG: https://www.erase.bg/upload
+
+Convert svg: https://www.adobe.com/express/feature/image/convert/svg
