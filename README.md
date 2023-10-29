@@ -50,3 +50,6 @@ Remove BG: https://www.erase.bg/upload
 Convert svg: https://www.adobe.com/express/feature/image/convert/svg
 
 Use the fill-{color} utilities to change the fill color of an SVG.
+
+Học về css grid: https://viblo.asia/p/hieu-ve-css-grid-layout-phan-1-naQZRA6GKvx
+https://viblo.asia/p/hieu-ve-css-grid-layout-phan-2-1VgZvoa9lAw
