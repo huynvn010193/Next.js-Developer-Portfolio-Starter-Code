@@ -6,9 +6,26 @@ import Link from "next/link";
 import React from "react";
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 import article2 from "../../public/images/articles/create loading screen in react js.jpg";
+import article3 from "../../public/images/articles/create modal component in react using react portals.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
+
+const Article = ({ img, title, date, link }) => {
+  return (
+    <li
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center 
+      justify-between bg-light text-dark first:mt-0 border
+      border-solid border-dark border-r-4 border-b-4
+    "
+    >
+      <Link href={link} target="_blank">
+        <h2>{title}</h2>
+      </Link>
+      <span>{date}</span>
+    </li>
+  );
+};
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
@@ -64,7 +81,53 @@ const articles = () => {
               link="/"
             />
           </ul>
-          <h2>All Articles</h2>
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+            All Articles
+          </h2>
+          <ul>
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="March 22, 2023"
+              link="/"
+              img={article3}
+            />
+          </ul>
         </Layout>
       </main>
     </>
