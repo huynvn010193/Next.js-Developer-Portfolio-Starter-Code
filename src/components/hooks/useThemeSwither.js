@@ -6,9 +6,11 @@ const useThemeSwither = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkQuery);
+
     const usePref = window.localStorage.getItem("theme");
 
     const handleChange = () => {
+      console.log("handleChange");
       if (usePref) {
         let check = usePref === "dark" ? "dark" : "light";
         setMode(check);
@@ -18,6 +20,7 @@ const useThemeSwither = () => {
           document.documentElement.classList.remove("dark");
         }
       } else {
+        console.log("bbb");
         let check = mediaQuery.matches ? "dark" : "light";
         setMode(check);
         if (check === "dark") {
@@ -33,11 +36,17 @@ const useThemeSwither = () => {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  useEffect(() =? {
+  useEffect(() => {
+    if (mode === "dark") {
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    } else {
+      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
 
-  }, [mode])
-
-  return <div>useThemeSwither</div>;
+  return [mode, setMode];
 };
 
 export default useThemeSwither;
