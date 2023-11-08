@@ -12,6 +12,7 @@ const useThemeSwither = () => {
     const handleChange = () => {
       console.log("handleChange");
       if (usePref) {
+        console.log("aaa");
         let check = usePref === "dark" ? "dark" : "light";
         setMode(check);
         if (check === "dark") {
@@ -30,6 +31,8 @@ const useThemeSwither = () => {
         }
       }
     };
+
+    handleChange();
 
     mediaQuery.addEventListener("change", handleChange);
 
