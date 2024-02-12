@@ -15,6 +15,8 @@ const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
+
+  // set isInView 1 lần.
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
@@ -23,6 +25,7 @@ const AnimatedNumbers = ({ value }) => {
     }
   }, [isInView, value, motionValue]);
 
+  // A motion value that animates to its target with a spring
   useEffect(() => {
     springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
